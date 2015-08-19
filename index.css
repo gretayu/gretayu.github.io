@@ -4,7 +4,7 @@
 
 
 body{
-	background-color: #DCF8FF; 
+	background-color: #F8FFF6; 
 	font-family: Eurostile, Copperplate Gothic Light, Candara, proxima-nova, 'Helvetica Neue', Arial, sans-serif;
 	font-size:  1.2rem;
 	margin: 48px;
@@ -19,13 +19,13 @@ body{
 }
 
 h1{
-	color: #234970;
+	color: #53545B;
 	margin-bottom: 12px;
 	font-size: 3rem;	
 }
 
 h2{
-	color: #544333;
+	color: #53545B;
 	margin-bottom: 4px;
 }
 
