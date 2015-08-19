@@ -5,7 +5,7 @@
 
 body{
 	background-color: #DCF8FF; 
-	font-family: proxima-nova, 'Helvetica Neue', Arial, sans-serif;
+	font-family: Eurostile, Copperplate Gothic Light, Candara, proxima-nova, 'Helvetica Neue', Arial, sans-serif;
 	font-size:  1.2rem;
 	margin: 48px;
 }
@@ -20,7 +20,8 @@ body{
 
 h1{
 	color: #234970;
-	margin-bottom: 12px;	
+	margin-bottom: 12px;
+	font-size: 3rem;	
 }
 
 h2{
