@@ -1,12 +1,20 @@
 *{
+	margin: 0px;
+}
+
+.role{
 	margin: 0;
 }
+/*.navbar{
+	display: none;
+}*/
 
 
 body{
-	background-color: #F8FFF6; 
+	background-color: #F4F9F5; 
 	font-family: Eurostile, Copperplate Gothic Light, Candara, proxima-nova, 'Helvetica Neue', Arial, sans-serif;
 	font-size:  1.2rem;
+	line-height: 40px;
 	margin: 48px;
 }
 
@@ -15,26 +23,76 @@ body{
 	height: 200px;
 	width: 200px;
 	float: left;
-	margin-right: 8px;
+	margin-right: 4px;
+	-webkit-box-shadow: #666 0px 2px 3px;
 }
 
+.profile-pic:hover {
+	position: relative; 
+	top: 2px;
+	left: 2px;
+}
+
+
+
 h1{
-	color: #53545B;
-	margin-bottom: 12px;
-	font-size: 3rem;	
+	color: #B5774D;
+	margin-bottom: 24px;
+	font-size: 4rem;	
 }
 
 h2{
-	color: #53545B;
-	margin-bottom: 4px;
+	color: #3F7A41;
+	margin-bottom: 6px;
+	font-size: 2rem;
 }
 
-div{
+.container{
+	background-color: #F8FFF6;
 	margin-left: 220px;
-	border: solid 3px #FC9F5B;
+	/*border: solid 2px #53545B; */
+	-webkit-box-shadow: #666 0px 2px 3px;
+	border-radius: 4px;
 	margin-bottom: 12px;
 	padding: 18px;
 }
+
+nav {
+	font-style: none;
+	text-transform: capitalize;
+	background-color: #754D33;
+	position: -0 0 fixed;
+	text-decoration: none;
+	color: white;
+}
+
+.nav li{
+	position: relative;
+	margin: 6px;
+	padding: 4px;
+	list-style: none;
+	float: right;
+}
+
+.navbar {
+  min-height: 50px;
+  margin: 0px;
+  width: 100%;
+}
+
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/*.page-scroll {
+	text-decoration: none;
+	color: white;
+}
+*/
 
 .media{
 	max-width: 100%;
