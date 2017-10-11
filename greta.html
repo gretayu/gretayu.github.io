@@ -3,44 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Gεnιus Goolaιτa</title>
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
     <link rel="stylesheet" href="main.css" />
-<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="My name is Goolaιτa Yu and I've been pretending to be a GEEK. I'm a Taiwaness Energy Engineenr, currently waiting to graduate...">
-    <meta name="keywords" content="Greta, Goolaita, Genius, Energy, Engineer, interface, portfolio, web design, mobile, ios, app" />
-    <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="favicon.ico">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-30542995-1', 'auto');
-      ga('send', 'pageview');
+    <style>
+    .divpintop {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 50vw;
+        z-index: 30;
+        margin: 0 auto;
+        }
+    </style>
 
-    </script>
--->
+    <style>
+    .pintop {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        text-indent: -1px;
+        }
+    </style>
+    
+    <style>
+    .divorigin {
 
+        }
+    </style>
+
+    <style>
+    .origin {
+    font-size: 160px;
+    font-weight: 700;
+    letter-spacing: -10px;
+    text-indent: -10px;
+        }
+    </style>
 </head>
 <body>
     <div class="top-bar">
         <nav class="main-nav">
-            <a href="/#ahoj">Interest</a>
-            <a href="/#about">About</a>
+            <a href="#ahoj">Interest</a>
+            <a href="#about">About</a>
             <a href="mailto:gretayukai@gmail.com">Email</a>
         </nav>
     </div>
 
     <div class="root">
-        <section class="full-section -hello" data-anchor="hello">
+        <section class="full-section -hello" id="hello">
             <article>
-                <h1>Hello.</h1>
+                <div id="hel">
+                    <h1 id="hell">Hello.</h1>
+                </div>
                 <p>My name is Goolaιτa Yu and I've been pretending to be a GEEK. I'm a Energy Engineenr, currently waiting to graduate...</p>
             </article>
         </section>
 
-        <section class="full-section -ahoj" data-anchor="ahoj">
+        <section class="full-section -ahoj" id="ahoj">
             <article>
                 <h1>Ahoj.</h1>
                 <p>I used to greet people with this word.</p>
@@ -48,7 +67,7 @@
             </article>
         </section>
 
-        <section class="full-section -travel" data-anchor="travel">
+        <section class="full-section -travel" id="travel">
             <article>
                 <h1>Travel.</h1>
                 <p>Let's wander where the wifi is weak.</p>
@@ -56,7 +75,7 @@
             </article>
         </section>
 
-        <section class="full-section -baileys" data-anchor="baileys">
+        <section class="full-section -baileys" id="baileys">
             <article>
                 <h1>Baileys.</h1>
                 <p>Perfect with coffee.</p>
@@ -64,7 +83,7 @@
             </article>
         </section>
 
-        <section class="full-section -fb" data-anchor="fb">
+        <section class="full-section -fb" id="fb">
             <article>
                 <h1>FB.</h1>
                 <p>Search it: Greta Yu. You won't regret it.</p>
@@ -72,7 +91,7 @@
             </article>
         </section>
 
-        <section class="full-section -foto" data-anchor="foto">
+        <section class="full-section -foto" id="foto">
             <article>
                 <h1>Foto.</h1>
                 <p>Walk. Look. See. Stop. Photo Shot!</p>
@@ -80,7 +99,7 @@
             </article>
         </section>
 
-        <section class="full-section -CZ" data-anchor="CZ">
+        <section class="full-section -CZ" id="CZ">
             <article>
                 <h1>CZ.</h1>
                 <p>Stayed in Prage for a year, and it's not enough.</p>
@@ -88,7 +107,7 @@
             </article>
         </section>
 
-        <section class="full-section -about" data-anchor="about">
+        <section class="full-section -about" id="about">
             <article class="article-splitted">
                 <h1>Aloha.</h1>
 
@@ -124,12 +143,19 @@
     </div>
 
 
-<!--  
-    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="assets/js/vendor/jquery.fullPage.min.js"></script>
-    <script src="assets/js/vendor/parallax.min.js"></script>
--->
-    <script src="assets/js/home.js"></script>
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("hel").className = "divpintop";
+        document.getElementById("hell").className = "pintop";
+    } else {
+        document.getElementById("hel").className = "divorigin";
+        document.getElementById("hell").className = "origin";
+    }
+}
+</script>
 
 </body>
 </html>
