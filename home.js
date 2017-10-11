@@ -1,11 +1,11 @@
 (function(){
 
-    $('.-pepe').parallax({imageSrc: './assets/img/landing/pepe.jpg'});
+    $('.-pepe').parallax({imageSrc: './bike.png'});
     $('.-ahoj').parallax({imageSrc: './ahoj.jpg'});
-    $('.-mt').parallax({imageSrc: './assets/img/landing/mt.jpg'});
-    $('.-edit').parallax({imageSrc: './assets/img/landing/edit.jpg'});
-    $('.-dc').parallax({imageSrc: './assets/img/landing/dc.jpg'});
-    $('.-zh').parallax({imageSrc: './assets/img/landing/zh.jpg'});
+    $('.-mt').parallax({imageSrc: './bike.png'});
+    $('.-edit').parallax({imageSrc: './bike.png'});
+    $('.-dc').parallax({imageSrc: './bike.png'});
+    $('.-zh').parallax({imageSrc: './bike.png'});
 
     $('.root').fullpage({
         easingcss3: 'cubic-bezier(0.770, 0.000, 0.175, 1.000)',
