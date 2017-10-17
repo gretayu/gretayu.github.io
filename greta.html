@@ -4,47 +4,38 @@
     <meta charset="UTF-8">
     <title>Gεnιus Goolaιτa</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.scrollTo.js"></script> 
+    <script type="text/javascript">
+    $(function(){
+        $(".nav_ahoj").click(function(){
+            $.scrollTo('#ahoj',500);
+        });
+        $(".nav_about").click(function(){
+            $.scrollTo('#about',500);
+        });
+    });
+    </script>
 
     <style>
-    .divpintop {
-        display: block;
+    #hel {
         position: fixed;
-        top: 15px;
-        left: 50vw;
+        top: 50vh;
+        left: 3vw;
         z-index: 30;
         margin: 0 auto;
-        }
-    </style>
-
-    <style>
-    .pintop {
-        font-size: 20px;
+        font-size: 10em;
         font-weight: bold;
-        letter-spacing: -1px;
-        text-indent: -1px;
         }
     </style>
-    
-    <style>
-    .divorigin {
+   
 
-        }
-    </style>
-
-    <style>
-    .origin {
-    font-size: 160px;
-    font-weight: 700;
-    letter-spacing: -10px;
-    text-indent: -10px;
-        }
-    </style>
 </head>
 <body>
     <div class="top-bar">
         <nav class="main-nav">
-            <a href="#ahoj">Interest</a>
-            <a href="#about">About</a>
+            <a class="nav_ahoj" href="#">Interest</a>
+            <a class="nav_about" href="#">About</a>
             <a href="mailto:gretayukai@gmail.com">Email</a>
         </nav>
     </div>
@@ -52,9 +43,7 @@
     <div class="root">
         <section class="full-section -hello" id="hello">
             <article>
-                <div id="hel">
-                    <h1 id="hell">It's Goolaita!</h1>
-                </div>
+                <div id="hel">Hello.</div>
                 <p>My name is Goolaιτa Yu and I've been pretending to be a GEEK. I'm a Energy Engineenr, currently waiting to graduate...</p>
             </article>
         </section>
@@ -143,18 +132,29 @@
     </div>
 
 
-<script>
-window.onscroll = function() {myFunction()};
 
-function myFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("hel").className = "divpintop";
-        document.getElementById("hell").className = "pintop";
-    } else {
-        document.getElementById("hel").className = "divorigin";
-        document.getElementById("hell").className = "origin";
-    }
-}
+<script>
+$(document).ready(function(){
+    $ (window).scroll(function() {
+        var div = $("#hel");
+        if ($(document).scrollTop() > 80) {
+            div.animate({
+            top: '18px',
+            left: '45vw',
+            opacity: '0.9',
+            fontSize: '1em'
+        },"fast");
+        } else{
+            div.animate({
+            top: '400px',
+            left: '20px',
+            opacity: '1',
+            fontSize: '10em',
+            fontWeight: 'bold'
+        },"fast");
+        }
+    });
+});
 </script>
 
 </body>
